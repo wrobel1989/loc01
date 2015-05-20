@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.CheckBox;
 
 public class ClientActivity extends Activity {
 	private Button btnStartService;
 	private Button btnStopService;
+	private CheckBox advSet;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -18,6 +20,7 @@ public class ClientActivity extends Activity {
 		btnStartService = (Button) findViewById(R.id.btnStartService);
 		btnStopService = (Button) findViewById(R.id.btnStopService);
 		initButtonsOnClick();
+		this.advSet = (CheckBox) findViewById (R.id.advst);
 	}
 
 	private void initButtonsOnClick() {

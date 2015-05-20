@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:layout_gravity="center_horizontal"
     android:orientation="vertical" >
@@ -54,39 +54,28 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal" >
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-        </TableRow>
-
-        <TableRow
             android:id="@+id/tableRow4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal" >
 
             <CheckBox
-                android:id="@+id/checkBox1"
+                android:id="@+id/advst"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ustawienia Zaawansowane" />
+                android:text="Ustawienia Zaawansowane"
+                android:textSize="11sp" />
+
         </TableRow>
 
         <TableRow
             android:id="@+id/tableRow5"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="center_horizontal" >
 
             <TextView
-                android:id="@+id/textView1"
+                android:id="@+id/coilesecdesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -114,19 +103,6 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="" />
-
-        </TableRow>
-
-        <TableRow
             android:id="@+id/tableRow7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -145,13 +121,48 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal" >
 
-            <AutoCompleteTextView
-                android:id="@+id/autoCompleteTextView1"
-                android:layout_width="match_parent"
-                android:layout_marginBottom="49dp"
+            <EditText
+                android:id="@+id/urlid"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
                 android:ems="10"
-                android:gravity="center_horizontal"
                 android:text="http://wrobel731.ovh.org/loc/loc.php" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="ID:"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="ABCDEFGH" />
+
+            </LinearLayout>
+
         </TableRow>
 
         <TableRow
@@ -164,7 +175,8 @@
                 android:id="@+id/checkBox2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Powiadamiaj o wyslaniu requesta" />
+                android:text="Powiadamiaj o requescie" />
+
         </TableRow>
 
     </TableLayout>
